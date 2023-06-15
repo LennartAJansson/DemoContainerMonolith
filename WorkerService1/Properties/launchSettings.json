@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WorkerService1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development",
+        "ConnectionStrings__PeopleDb": ""
+      },
+      "dotnetRunMessages": true
+    }
+  }
+}
