@@ -10,6 +10,8 @@ builder.Services.AddSwaggerGen();
 
 WebApplication app = builder.Build();
 
+app.UseProjectorDb();
+
 if (app.Environment.IsDevelopment())
 {
     _ = app.UseSwagger();

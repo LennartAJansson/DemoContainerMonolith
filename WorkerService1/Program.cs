@@ -4,6 +4,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         _ = services.AddProjector(context.Configuration.GetConnectionString("PeopleDb")
             ??throw new ArgumentException("No connectionstring"));
     })
-    .Build();
+    .Build()
+    .UseProjectorDb();
 
 host.Run();
